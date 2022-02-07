@@ -27,7 +27,7 @@ let s:error = '#5f0000'
 " Tabline:
 let s:tabline_bg = '#3a3a3a'
 let s:tabline_active_fg = '#1c1c1c'
-let s:tabline_active_bg = '#00afaf'
+let s:tabline_active_bg = '#5f8787'
 let s:tabline_inactive_fg = '#c6c6c6'
 let s:tabline_inactive_bg = '#585858'
 
@@ -39,7 +39,7 @@ let s:statusline_inactive_bg = '#444444'
 
 " Visual:
 let s:visual_fg = '#000000'
-let s:visual_bg = '#8787af'
+let s:visual_bg = '#9ac997'
 
 let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
 let s:p.normal.left = [ [ s:foreground, s:background ], [ s:statusline_active_fg, s:status ], [ s:statusline_active_fg, s:statusline_active_bg ] ]
@@ -48,9 +48,11 @@ let s:p.normal.middle = [ [ s:statusline_active_fg, s:statusline_active_bg ]]
 let s:p.inactive.right = [ [ s:foreground, s:background ], [ s:foreground, s:background ] ]
 let s:p.inactive.left = [ [ s:foreground, s:background ], [ s:foreground, s:background ] ]
 let s:p.inactive.middle = [ [ s:foreground, s:background ], ]
-let s:p.insert.left = [ [ s:background, s:blue], [ s:statusline_active_fg, s:status ], [ s:statusline_active_fg, s:statusline_active_bg ] ]
+let s:p.insert.left = [ [ s:background, s:olive], [ s:statusline_active_fg, s:status ], [ s:statusline_active_fg, s:statusline_active_bg ] ]
+let s:p.insert.right = [ [ s:olive, s:background ], [ s:statusline_active_fg, s:status ], [ s:statusline_active_fg, s:statusline_active_bg ] ]
 let s:p.replace.left = [ [ s:background, s:pink ], [s:statusline_active_fg, s:status ], [ s:statusline_active_fg, s:statusline_active_bg ] ]
-let s:p.visual.left = [ [ s:visual_fg, s:visual_bg ], [s:statusline_active_fg, s:status ], [ s:statusline_active_fg, s:statusline_active_bg ] ]
+let s:p.visual.left = [ [ s:visual_fg, s:visual_bg ], [ s:statusline_active_fg, s:status ], [ s:statusline_active_fg, s:statusline_active_bg ] ]
+let s:p.visual.right = [ [ s:visual_fg, s:visual_bg ], [ s:statusline_active_fg, s:status ], [ s:statusline_active_fg, s:statusline_active_bg ] ]
 let s:p.tabline.left = [ [s:tabline_inactive_fg, s:tabline_inactive_bg ]]
 let s:p.tabline.tabsel = [ [s:tabline_active_fg, s:tabline_active_bg ] ]
 let s:p.tabline.middle = [ [s:tabline_bg, s:tabline_bg]]

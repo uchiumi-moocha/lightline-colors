@@ -1,4 +1,4 @@
-# lightline-iceberg
+# lightline-colors
 
 
 ```viml
