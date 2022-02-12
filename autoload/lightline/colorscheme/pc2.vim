@@ -1,12 +1,12 @@
 " =============================================================================
-" Filename: autoload/lightline/colorscheme/PaperColor2.vim
+" Filename: autoload/lightline/colorscheme/pc2.vim
 " Author: moocha
 " License: MIT License
 " Last Change: 2022
 " =============================================================================
 
 if lightline#colorscheme#background() ==# 'light'
-  let g:lightline#colorscheme#PaperColor2#palette = g:lightline#colorscheme#PaperColor2_light#palette
+  let g:lightline#colorscheme#pc2#palette = g:lightline#colorscheme#pc2_light#palette
 else
-  let g:lightline#colorscheme#PaperColor2#palette = g:lightline#colorscheme#PaperColor2_dark#palette
+  let g:lightline#colorscheme#pc2#palette = g:lightline#colorscheme#pc2_dark#palette
 endif
